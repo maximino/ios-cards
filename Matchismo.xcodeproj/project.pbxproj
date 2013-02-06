@@ -87,8 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				504A7F7B16C2E5B50019EE52 /* MainStoryboard.storyboard */,
-				504A7F8616C2F16E0019EE52 /* Card.h */,
-				504A7F8716C2F16E0019EE52 /* Card.m */,
+				50AF9D4316C2FF3500987A7A /* Model */,
 				504A7F7E16C2E5B50019EE52 /* CardGameViewController.h */,
 				504A7F7F16C2E5B50019EE52 /* CardGameViewController.m */,
 				504A7F6A16C2E5B40019EE52 /* Supporting Files */,
@@ -110,6 +109,15 @@
 				504A7F7916C2E5B50019EE52 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50AF9D4316C2FF3500987A7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				504A7F8616C2F16E0019EE52 /* Card.h */,
+				504A7F8716C2F16E0019EE52 /* Card.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +313,7 @@
 				504A7F8516C2E5B50019EE52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
