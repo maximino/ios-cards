@@ -11,6 +11,7 @@
 @interface CardMatchingGame()
 
 @property (readwrite, nonatomic) int score;
+@property (readwrite, nonatomic) NSString *info;
 @property (strong, nonatomic) NSMutableArray *cards; // of Card
 
 @end
@@ -31,7 +32,7 @@
 - (void)flipCardAtIndex:(NSUInteger)index
 {
     Card *card = [self cardAtIndex:index];
-    
+    self.info = @"";
     if (!card.isUnplayable) {
         if (!card.isFaceUp) {
             for (Card *otherCard in self.cards) {
@@ -41,14 +42,17 @@
                         otherCard.unplayable = YES;
                         card.unplayable = YES;
                         self.score += matchScore * MATCH_BONUS;
+                        self.info = self.score > 4 ? [NSString stringWithFormat:@"Bonus! 16"] : [NSString stringWithFormat:@"Nice! add 4"];
                     } else {
                         otherCard.faceUp = NO;
                         self.score -= MISMATCH_PENALTY;
+                        self.info = [NSString stringWithFormat:@"penalty! - 2"];
                     }
                     break;
                 }
             }
             self.score -=FLIP_COST;
+            self.info = [NSString stringWithFormat:@"%@ - 1 due flipped up.", self.info];
         }
         card.faceUp = !card.isFaceUp;
     }
