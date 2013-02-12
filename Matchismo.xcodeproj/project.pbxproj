@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5032AE9116C5C34F001E3976 /* Evomatik logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5032AE9016C5C34F001E3976 /* Evomatik logo.png */; };
 		504A7F6416C2E5B40019EE52 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504A7F6316C2E5B40019EE52 /* UIKit.framework */; };
 		504A7F6616C2E5B40019EE52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504A7F6516C2E5B40019EE52 /* Foundation.framework */; };
 		504A7F6816C2E5B40019EE52 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504A7F6716C2E5B40019EE52 /* CoreGraphics.framework */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5032AE9016C5C34F001E3976 /* Evomatik logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Evomatik logo.png"; sourceTree = "<group>"; };
 		504A7F6016C2E5B40019EE52 /* Matchismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		504A7F6316C2E5B40019EE52 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		504A7F6516C2E5B40019EE52 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -119,6 +121,7 @@
 				504A7F7516C2E5B50019EE52 /* Default.png */,
 				504A7F7716C2E5B50019EE52 /* Default@2x.png */,
 				504A7F7916C2E5B50019EE52 /* Default-568h@2x.png */,
+				5032AE9016C5C34F001E3976 /* Evomatik logo.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				504A7F7816C2E5B50019EE52 /* Default@2x.png in Resources */,
 				504A7F7A16C2E5B50019EE52 /* Default-568h@2x.png in Resources */,
 				504A7F7D16C2E5B50019EE52 /* MainStoryboard.storyboard in Resources */,
+				5032AE9116C5C34F001E3976 /* Evomatik logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

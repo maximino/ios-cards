@@ -44,14 +44,19 @@
 - (void)updateUI
 {
     for (UIButton *cardButton in self.cardButtons) {
+        // Pointer to image
+        UIImage *cardBackImage = [UIImage imageNamed:@"Evomatik logo.png"];//resizableImageWithCapInsets:UIEdgeInsetsMake(50, 10, 50, 10) resizingMode:UIImageResizingModeStretch];
         Card *card = [self.game cardAtIndex:[self.cardButtons indexOfObject:cardButton]];
         [cardButton setTitle:card.contents forState:UIControlStateSelected];
         [cardButton setTitle:card.contents forState:UIControlStateSelected|UIControlStateDisabled];
         cardButton.selected = card.isFaceUp;
         cardButton.enabled = !card.isUnplayable;
         cardButton.alpha = card.isUnplayable ? 0.5 : 1.0;
+        [cardButton setImage:card.isFaceUp?nil:cardBackImage forState:UIControlStateNormal];
+        
     }
     self.scoreLabel.text = [NSString stringWithFormat:@"%d :Score", self.game.score];
+    // After setting the score, we update the user with information on the last flip. This information comes from the model.
     self.infoLabel.text = [NSString stringWithFormat:@"%@", self.game.info];
 }
 
